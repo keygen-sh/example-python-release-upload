@@ -11,7 +11,7 @@ First up, configure a few environment variables:
 ```bash
 # Your Keygen product token. You can generate a product token via the API
 # or your admin dashboard.
-export KEYGEN_PRODUCT_TOKEN="A_KEYGEN_ACTIVATION_TOKEN"
+export KEYGEN_PRODUCT_TOKEN="A_KEYGEN_PRODUCT_TOKEN"
 
 # Your Keygen account ID. Find yours at https://app.keygen.sh/settings.
 export KEYGEN_ACCOUNT_ID="YOUR_KEYGEN_ACCOUNT_ID"
