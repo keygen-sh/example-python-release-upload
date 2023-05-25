@@ -20,7 +20,8 @@ def create_release(**kwargs):
     headers={
       'Authorization': f"Bearer {os.environ['KEYGEN_PRODUCT_TOKEN']}",
       'Content-Type': 'application/vnd.api+json',
-      'Accept': 'application/vnd.api+json'
+      'Accept': 'application/vnd.api+json',
+      'Keygen-Version': '1.0'
     },
     data=json.dumps({
       'data': {
@@ -62,7 +63,8 @@ def upload_artifact_for_release(**kwargs):
     allow_redirects=False,
     headers={
       'Authorization': f"Bearer {os.environ['KEYGEN_PRODUCT_TOKEN']}",
-      'Accept': 'application/vnd.api+json'
+      'Accept': 'application/vnd.api+json',
+      'Keygen-Version': '1.0'
     }
   )
 
