@@ -1,7 +1,7 @@
 # Example Release Upload
 
-This is an example of [creating a new release](https://keygen.sh/docs/api/#releases)
-and [uploading an artifact](https://keygen.sh/docs/api/#releases-artifacts-upload)
+This is an example of [creating a new release](https://keygen.sh/docs/api/releases/#releases-create)
+and [uploading artifacts](https://keygen.sh/docs/api/artifacts/#artifacts-create)
 using Keygen's distribution API.
 
 ## Running the example
@@ -36,8 +36,12 @@ To create and upload a new release, run the program:
 python main.py
 ```
 
-The script will upsert a new `1.0.0` release for `dist/hello-world.txt`,
-and upload the `file` to the release's artifact relationship.
+The script will create a new `1.0.0` release and then upload 2 artifacts:
+
+- `examples/hello-world.txt`
+- `examples/hello-mars.txt`
+
+After uploading the artifacts, the release will be published.
 
 ## Questions?
 
